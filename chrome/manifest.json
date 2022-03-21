@@ -1,0 +1,19 @@
+{
+    "name": "test-tool",
+    "description": "",
+    "version": "0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": {
+            "16": "truck_16x16.png"
+        }
+    },
+    "permissions": ["scripting"],
+    "host_permissions": [
+        "http://*.google.com/*",
+        "https://*.google.com/*"
+    ],
+    "background": {
+        "service_worker": "index.js"
+    }
+}
